@@ -1,0 +1,179 @@
+
+:root{
+    --verde-5: #288025;
+    --verde-4: #47a740;
+    --verde-3: #6ac260;
+    --verde-2: #7cd96f;
+    --verde-1: #96f286;
+    --fonte1: tecnologia;
+    --fonte2: agaum;
+}
+
+@font-face {
+    font-family: "tecnologia";
+    src: url(/fontes/idroid.otf);
+}
+@font-face {
+    font-family: "agaum";
+    src: url(/fontes/AGAUM.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.externo::after{
+    content: '📌';
+}
+
+.externo{
+
+    text-decoration: none;
+    color: black;
+    background-color: var(--verde-1);
+    border-radius: 10px;
+    padding: 0px 5px 2px 5px
+}
+
+h2, h1{
+    font-family: var(--fonte1);
+}
+
+p {
+    text-align: justify;
+}
+
+.main{
+    border-radius: 8px;
+    padding: 5px;
+    background-image: linear-gradient(to right, green, white);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--verde-2), var(--verde-5));
+    min-height: 150px;
+    padding: 40px 10px 10px 10px;
+}
+
+header > p{
+        color: rgb(0, 0, 0);
+        padding: 5px 3px;
+        text-align: center;
+        font-size: 1.5em
+}
+
+header > h1{
+    font-family: var(--fonte2);
+    color: rgb(0, 0, 0);
+    padding: 5px 3px;
+    text-align: center;
+    font-size: 3em;
+}
+
+nav{
+    background-color: var(--verde-5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.301);
+}
+
+nav > a{
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    background-color: var(--verde-1);
+    padding: 11px;
+    color: black;
+    font-weight: bolder;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+body{
+    background-color: rgb(194, 230, 194);
+}
+
+
+main{
+    background-color: white;
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.664);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main p{
+    padding: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main img{
+    width: 100%;
+}
+
+
+.video{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 35vh;
+}
+
+div.list{
+    background-color: rgb(213, 235, 213);
+    margin: 15px 0px;
+    padding: 0px 0px;
+    border-radius: 8px;
+}
+
+div > h3{
+    background-image: linear-gradient(to bottom, var(--verde-1), var(--verde-5));
+    border-radius: 8px 8px 0px 0px;
+    padding-left: 10px;
+}
+
+div > p{
+    padding: 10px;
+}
+
+div > ul{
+    list-style-type: '🧁';
+    list-style-position: inside;
+    padding-left: 12px;
+    columns: 2;
+}
+
+footer{
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: aliceblue;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: var(--verde-2);
+}
